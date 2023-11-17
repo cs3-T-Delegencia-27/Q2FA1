@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<p> <a id="linkNo1" href="#div1">LINK ONE</a>
+		<p> <a id="linkNo2" href="#div2">LINK TWO</a>
+		<br>
+		<div id="div1">Div1 HERE!</div>
+		<br>
+		<div id="div2">Div2 HERE!</div>
+	</body>
+	<style>
+		#linkNo1{
+			background-color: cornsilk;
+			color:purple;
+			font-weight:bold;
+			font-size:30px;
+			font-family:'Verdana';
+		}
+		
+		#linkNo1:hover{
+			background-color:lavender;
+			color:darkblue;
+		}
+		
+		#linkNo1: active{
+			background-color:pink;
+			color:red;
+		}
+		
+		#linkNo1:focus{
+		background-color:purple;
+		color: white;
+		}
+		
+		#linkNo1:visited{
+			background-color: green;
+			color:white;
+		}
+		
+		#linkNo2{
+			background-color: pink;
+			color:darkblue;
+			font-weight:bold;
+			font-size:30px;
+			font-family:'Verdana';
+		}
+		
+		#linkNo2:hover{
+			background-color:lightblue;
+			color:red;
+		}
+		
+		#linkNo2:active{
+			background-color:teal;
+			color:white;
+		}
+		
+		#linkNo2:focus{
+			background-color:orange;
+			color: white;
+		}
+		
+		#linkNo2:visited{
+			background-color: lightgreen;
+			color:white;
+		}
+		
+		div{
+			border: 5px solid black;
+			width: 400px;
+			height: 250px;
+			padding: 20px
+			font-family: 'Verdana';
+			font-size: 25px;
+		}
+		
+		div:target#div2{
+			background-color: pink;
+			color:darkblue;
+			border:10px dotted green;
+		}
+		
+		div:target#div1{
+		background-color:cornsilk;
+		color:purple;
+		}
+  </style>
+
+</html>
